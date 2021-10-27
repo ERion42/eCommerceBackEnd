@@ -32,10 +32,13 @@ router.get('/:id', (req, res) => {
     where: {
       id: req.params.id
     },
-    include: {
-      model: Category,
-      attributes: ['category_id','product_name']
-    }
+    include: [
+      Category,
+      {
+        model: Tag,
+        through: ProductTag,
+      },
+    ],
     })
       .then(categoryData => res.json(categoryData)) 
       .catch(err=> {
@@ -120,7 +123,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', (req, res) => {
   // delete one product by its `id` value
-  Product.destory({
+  Product.destroy({
     where: {
       id: req.params.id,
     },

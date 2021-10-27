@@ -47,6 +47,8 @@ To get a specific entry in a table:
 localhost:3001/api/categories/[id]
 ```
 
+*video*
+https://drive.google.com/file/d/1_8lw_RUmmvWH-K9Yxtly_Q-4sFv7utgs/view
 
   
 ## Contributing

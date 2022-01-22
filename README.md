@@ -7,6 +7,8 @@ Back end with starter code. Configuring a working Express.js API to use Sequeliz
 
 Currently it is very bare-bones. Most of it works- there are two non-fatal errors when modifying existing records. There is a fatal error when the user tries to delete a product. Other than that it all seems completely functional.
 
+![Screenshot](https://github.com/ERion42/eCommerceBackEnd/blob/09fa475fa32b3f0c26ed6a30707ee79706e534ff/eCommerceBackEnd.png)
+
 ## Table of Contents 
 
 * [Installation](#installation)
